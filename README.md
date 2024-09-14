@@ -53,6 +53,7 @@ git clone https://github.com/your-repo/stm32-fft-graph.git
 Open the project in your STM32 IDE (STM32CubeIDE, Keil, etc.).
 
 Configure the microcontroller to use the ADC peripheral and enable floating-point operations.
+I think it syncs my settings, but make sure SAMPLE_SIZE=32 is in the compiler "define" setting.
 
 Build and flash the program onto your STM32 board.
 
