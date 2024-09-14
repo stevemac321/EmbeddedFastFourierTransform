@@ -122,7 +122,7 @@ int main(void)
 	
 	priority_queue_from_array(&pq, magbuffer, SAMPLE_SIZE);
 	priority_queue_build_max_heap(&pq);
-	
+
 	create_graph(&graph, SAMPLE_SIZE);
 	for(int i=0; i < pq.heap_size; i++) {
 		add_vertex(&graph, pq.heap[i]);

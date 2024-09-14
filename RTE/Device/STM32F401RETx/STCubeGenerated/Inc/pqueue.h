@@ -8,13 +8,11 @@ struct Complex {
 	float real;
 	float imag;
 };
-
 struct priority_queue {
-    float heap[SAMPLE_SIZE];
+    float *heap;
     size_t length;
     size_t heap_size;
 };
-
 // Constructor: Initializes the priority queue with values existing
 void priority_queue_from_array(struct priority_queue *pq, float input[], const size_t size);
 

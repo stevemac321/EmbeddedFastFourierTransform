@@ -44,9 +44,11 @@ static void max_heapify(struct priority_queue *pq, size_t i) {
 void priority_queue_from_array(struct priority_queue *pq, float input[], const size_t size) {
     pq->length = size;
     pq->heap_size = size;
+	#if 0
 		for(size_t i = 0; i < size; i++) {
 			pq->heap[i] = input[i];
 		}
+	#endif
 }
 
 // Build max-heap from the current array
